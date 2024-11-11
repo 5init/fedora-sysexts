@@ -20,5 +20,7 @@ RUN dnf install -y \
     qemu-img \
     swtpm \
     virt-install \
+    glib2 \
+    virt-manager \
     && \
     dnf clean all

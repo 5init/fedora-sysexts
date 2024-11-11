@@ -19,6 +19,8 @@ qemu
 qemu-img
 swtpm
 virt-install
+glib2
+virt-manager
 "
 base_images := "
 quay.io/fedora-ostree-desktops/kinoite:41
