@@ -1,5 +1,6 @@
 FROM baseimage
 
-RUN dnf install @cosmic-desktop-environment -y \
+RUN dnf copr enable ryanabx/cosmic-epoch -y \
+    dnf install cosmic-desktop -y \
     && \
     dnf clean all
