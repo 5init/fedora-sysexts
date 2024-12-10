@@ -1,6 +1,8 @@
-name := "cosmic-desktop"
-packages := "cosmic-desktop"
-dnf_weak_deps := "true"
+name := "firefox"
+packages := "
+firefox
+firefox-langpacks
+"
 base_images := "
 quay.io/fedora-ostree-desktops/silverblue:41
 quay.io/fedora-ostree-desktops/kinoite:41

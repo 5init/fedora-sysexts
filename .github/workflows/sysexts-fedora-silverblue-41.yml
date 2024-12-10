@@ -111,14 +111,6 @@ jobs:
           just build ${IMAGE}
           mv "${SYSEXT}"*".raw" "../artifacts/"
 
-      - name: "Build sysext: cosmic-desktop"
-        env:
-          SYSEXT: cosmic-desktop
-        run: |
-          cd "${SYSEXT}"
-          just build ${IMAGE}
-          mv "${SYSEXT}"*".raw" "../artifacts/"
-
       - name: "Build sysext: distrobox"
         env:
           SYSEXT: distrobox
@@ -146,6 +138,14 @@ jobs:
       - name: "Build sysext: erofs-utils"
         env:
           SYSEXT: erofs-utils
+        run: |
+          cd "${SYSEXT}"
+          just build ${IMAGE}
+          mv "${SYSEXT}"*".raw" "../artifacts/"
+
+      - name: "Build sysext: firefox"
+        env:
+          SYSEXT: firefox
         run: |
           cd "${SYSEXT}"
           just build ${IMAGE}
