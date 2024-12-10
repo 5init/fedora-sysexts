@@ -63,6 +63,14 @@ jobs:
           just build ${IMAGE}
           mv "${SYSEXT}"*".raw" "../artifacts/"
 
+      - name: "Build sysext: flatpak-builder"
+        env:
+          SYSEXT: flatpak-builder
+        run: |
+          cd "${SYSEXT}"
+          just build ${IMAGE}
+          mv "${SYSEXT}"*".raw" "../artifacts/"
+
       - name: "Build sysext: 1password-cli"
         env:
           SYSEXT: 1password-cli
